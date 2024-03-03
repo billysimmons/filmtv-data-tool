@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TNSpoExgqCJOA0T1ci/ULA94DJFIbkROw8oDI1sTaFvenH2dcc/8/DmmpdLyTzWjB0BQhzKeFfOxFScyU8vtyg==",
+  "success": true,
+  "projectFilePath": "/Users/billysimmons/Documents/PROJECTS/filmtv-data-tool/FilmTVDataTool/FilmTVDataTool.csproj",
+  "expectedPackageFiles": [
+    "/Users/billysimmons/.nuget/packages/csvhelper/31.0.2/csvhelper.31.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
