@@ -1,7 +1,6 @@
-﻿using System.Formats.Asn1;
-using System.Globalization;
+﻿using System.Globalization;
 using System.Text.Json;
-using CsvHelper; // dotnet add package CsvHelper
+using CsvHelper;
 
 namespace FilmTVDataTool
 {
@@ -88,7 +87,7 @@ namespace FilmTVDataTool
 
                 if (response.IsSuccessStatusCode)
                 {
-                    return await response.Content.ReadAsStringAsync(); // Learn this
+                    return await response.Content.ReadAsStringAsync();
                 }
                 else
                 {
@@ -135,7 +134,7 @@ namespace FilmTVDataTool
                 switch (key)
                 {
                     case ConsoleKey.UpArrow:
-                        selectedIndex = Math.Max(0, selectedIndex - 1); // Ensures it stays a positive number
+                        selectedIndex = Math.Max(0, selectedIndex - 1);
                         break;
                     case ConsoleKey.DownArrow:
                         selectedIndex = Math.Min(selectorItems.Count - 1, selectedIndex + 1);
@@ -186,7 +185,7 @@ namespace FilmTVDataTool
                         {
                             string searchResponseData = await apiClient.Get(searchTerm, "search", mediaType, i);
 
-                            var searchResult = JsonSerializer.Deserialize<SearchResultData>(searchResponseData); // Learn this
+                            var searchResult = JsonSerializer.Deserialize<SearchResultData>(searchResponseData);
 
                             if (searchResult != null && searchResult.Search != null)
                             {
